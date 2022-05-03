@@ -18,6 +18,19 @@ map("i", "<C-s>",       "<C-o>:write<CR>",      opt)
 -- 切换文件树
 map("n", "<A-m>",       ":NvimTreeToggle<CR>",  opt)
 -- 切换tab
-map("n", "<leader>w",   ":BufferLineCycleNext<CR>", opt)
+map("n", "<leader>n",   ":BufferLineCycleNext<CR>", opt)
+map("n", "<leader>p",   ":BufferLineCyclePrev<CR>", opt)
 -- 保存所有并退出
 map("n", "<leader>q",   ":wqa<CR>", opt)
+
+local plugin_map = {}
+
+--lsp map, only map the followig keys after the language server attachs to the current buffer
+plugin_map.lsp_map = function(buffer_map)
+  buffer_map( 'n', '<A-d>', '<cmd>lua vim.lsp.buf.definition()<CR>', opt)
+  buffer_map( 'n', '<A-r>', '<cmd>lua vim.lsp.buf.references()<CR>', opt)
+  buffer_map( 'n', '<space>r', '<cmd>lua vim.lsp.buf.rename()<CR>', opt)
+  buffer_map( 'n', '<A-f>', '<cmd>lua vim.lsp.buf.format()<CR>', opt)
+end
+
+return plugin_map

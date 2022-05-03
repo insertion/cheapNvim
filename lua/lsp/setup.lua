@@ -10,7 +10,7 @@ lsp_installer.setup{}
 
 local servers = {
   sumneko_lua = require("lsp.custom.lua"),
-  clangd = {},
+  clangd = require("lsp.custom.clangd"),
   --bashls = require("lsp.language.bash"),
   --pyright = require("lsp.language.pyright"),
   --jsonls = require("lsp.language.json"),
