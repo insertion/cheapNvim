@@ -84,6 +84,16 @@ _G.packer_plugins = {
     path = "/home/lei/.local/share/nvim/site/pack/packer/start/ibus-autoswitch.vim",
     url = "https://github.com/jiazhoulvke/ibus-autoswitch.vim"
   },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/lei/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/lei/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/lei/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",

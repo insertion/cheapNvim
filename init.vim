@@ -9,6 +9,8 @@ lua require('plugin-config/nvim-tree')
 lua require('plugin-config/nvim-treesitter')
 lua require('plugin-config/bufferline')
 
+" lsp config
+lua require('lsp/setup')
+
 " basic vimrc config
-set background="dark"
 colorscheme gruvbox

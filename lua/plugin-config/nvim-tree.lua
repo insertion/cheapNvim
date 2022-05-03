@@ -2,10 +2,10 @@
 -- setup with all defaults
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
 
-require'nvim-tree'.setup { 
+require'nvim-tree'.setup {
   -- BEGIN_DEFAULT_OPTS
   auto_reload_on_write = true,
-  disable_netrw = false,
+  disable_netrw = true,
   hijack_cursor = true,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
@@ -32,7 +32,6 @@ require'nvim-tree'.setup {
       },
     },
   },
-  
   hijack_directories = {
     enable = true,
     auto_open = true,

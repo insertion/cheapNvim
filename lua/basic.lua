@@ -17,9 +17,6 @@ vim.wo.number = true
 -- 高亮所在行
 vim.wo.cursorline = true
 
--- 显示左侧图标指示列
-vim.wo.signcolumn = "yes"
-
 -- 缩进4个空格等于一个Tab
 vim.o.tabstop = 4
 vim.bo.tabstop = 4
@@ -73,7 +70,7 @@ vim.o.swapfile = false
 vim.o.updatetime = 100
 
 -- 快捷键迟滞时间
-vim.o.timeoutlen = 300
+vim.o.timeoutlen = 500
 
 -- split window 从下边和右边出现
 vim.o.splitbelow = true

@@ -1,6 +1,5 @@
 -- nvimTree
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = "\\"
 
 -- vim.api.nvim_set_keymap 是暴露给lua设置快捷键的接口
 local map = vim.api.nvim_set_keymap
