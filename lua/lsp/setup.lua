@@ -16,12 +16,21 @@ local servers = {
   --jsonls = require("lsp.language.json"),
 }
 
+local on_attach = function(_, bufnr)
+    local function buf_set_keymap(...)
+      -- first para is buffer id
+      vim.api.nvim_buf_set_keymap(bufnr, ...)
+    end
+    require("keybindings").lsp_map(buf_set_keymap)
+end
+
 for name, custom_opts in pairs(servers) do
     local is_found, _ = lsp_installer.get_server(name)
     if is_found then
       -- table 的索引使用方括号[],Lua也提供.操作
       -- 使用[]操作符, 索引可以是变量
       -- 使用.操作符,索引不能是变量
+      custom_opts.on_attach = on_attach
       lsp_config[name].setup(custom_opts)
     end
 end

@@ -8,7 +8,10 @@ return require('packer').startup(function (use)
     use {'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer'}
 
     -- fuzzy search,todo
-
+    use {
+      'nvim-telescope/telescope.nvim',
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
     -- vim status line and theme,done
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
