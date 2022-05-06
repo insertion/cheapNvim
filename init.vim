@@ -8,7 +8,7 @@ lua require('keybindings')
 lua require('plugin-config/nvim-tree')
 lua require('plugin-config/nvim-treesitter')
 lua require('plugin-config/bufferline')
-
+lua require('plugin-config/nvim-telescope')
 " lsp config
 lua require('lsp/setup')
 

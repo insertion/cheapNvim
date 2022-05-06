@@ -17,10 +17,10 @@ vim.wo.number = true
 -- 高亮所在行
 vim.wo.cursorline = true
 
--- 缩进4个空格等于一个Tab
-vim.o.tabstop = 4
-vim.bo.tabstop = 4
-vim.o.softtabstop = 4
+-- 缩进2个空格等于一个Tab
+vim.o.tabstop = 2
+vim.bo.tabstop = 2
+vim.o.softtabstop = 2
 vim.o.shiftround = true
 
 -- >> << 时移动长度
@@ -86,8 +86,8 @@ vim.o.termguicolors = true
 vim.opt.termguicolors = true
 
 -- 不可见字符的显示，这里只把空格显示为一个点
-vim.o.list = true
-vim.o.listchars = "space:·"
+--vim.o.list = true
+--vim.o.listchars = "space:·"
 
 -- always show tabline
 vim.o.showtabline = 1 -- 0:不显示标签栏,1:创建标签页后才显示,2:总是显示
