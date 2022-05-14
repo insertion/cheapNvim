@@ -26,6 +26,10 @@ local on_attach = function(_, bufnr)
 --]]
   end
 
+-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
 for name, custom_opts in pairs(servers) do
     local is_found, _ = lsp_installer.get_server(name)
     if is_found then
@@ -33,6 +37,7 @@ for name, custom_opts in pairs(servers) do
       -- 使用[]操作符, 索引可以是变量
       -- 使用.操作符,索引不能是变量
       custom_opts.on_attach = on_attach
+      custom_opts.capabilities = capabilities
       lsp_config[name].setup(custom_opts)
     end
 end

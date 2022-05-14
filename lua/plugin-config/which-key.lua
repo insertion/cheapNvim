@@ -68,7 +68,7 @@ wk.register(leaderMapping, { mode = "n", noremap = true, nowait = false, silent 
 
 -- lsp mapping major use telescope agent
 local lspMapping = {
-  ["<space>f"] = { "<cmd>lua vim.lsp.buf.formatting()<CR>", "Format" },
+  ["<space>f"] = { "<cmd>lua vim.lsp.buf.format({async = true})<CR>", "Format" },
   ["gd"] = { "<cmd>Telescope lsp_definitions<CR>", "Goto difinition" },
   ["gr"] = { "<cmd>Telescope lsp_references<CR>", "Find references" }
 }
