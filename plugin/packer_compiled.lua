@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/lei/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
+  ["cmp-cmdline-history"] = {
+    loaded = true,
+    path = "/home/lei/.local/share/nvim/site/pack/packer/start/cmp-cmdline-history",
+    url = "https://github.com/dmitmel/cmp-cmdline-history"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/lei/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",

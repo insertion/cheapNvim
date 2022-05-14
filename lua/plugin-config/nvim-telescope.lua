@@ -12,10 +12,10 @@ require('telescope').setup {
       -- the default case_mode is "smart_case"
     }
   },
-
+  -- theme: "dropdown", "ivy"
   pickers = {
     find_files = {
-      theme = "dropdown",
+      theme = "ivy",
     }
   },
 }

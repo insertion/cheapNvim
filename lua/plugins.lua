@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
 
   -- displays a popup with possible keybindings
   use "folke/which-key.nvim"
+
   -- fuzzy search,done
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/plenary.nvim' } } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
@@ -34,6 +35,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer' -- { name = 'buffer' },
   use 'hrsh7th/cmp-path' -- { name = 'path' }
   use 'hrsh7th/cmp-cmdline' -- { name = 'cmdline' }
+  use 'dmitmel/cmp-cmdline-history' --{ name = 'cmdline_history'}
   use 'hrsh7th/nvim-cmp'
 
   -- vsnip
