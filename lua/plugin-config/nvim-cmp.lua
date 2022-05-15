@@ -27,5 +27,3 @@ local setting = {
   }
 }
 cmp.setup(setting)
-cmp.setup.cmdline("/", { sources = { { name = "buffer" }, { name = "cmdline_history" } } })
-cmp.setup.cmdline("?", { sources = { { name = "buffer" }, { name = "cmdline_history" } } })

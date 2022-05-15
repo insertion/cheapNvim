@@ -68,18 +68,18 @@ wk.register(leaderMapping, { mode = "n", noremap = true, nowait = false, silent 
 
 -- lsp mapping major use telescope agent
 local lspMapping = {
-  ["<space>f"] = { "<cmd>lua vim.lsp.buf.format({async = true})<CR>", "Format" },
+  ["<leader>f"] = { "<cmd>lua vim.lsp.buf.format({async = true})<CR>", "Format" },
   ["gd"] = { "<cmd>Telescope lsp_definitions<CR>", "Goto difinition" },
   ["gr"] = { "<cmd>Telescope lsp_references<CR>", "Find references" }
 }
 wk.register(lspMapping, { mode = "n", noremap = true, nowait = false, silent = true, buffer = nil, prefix = "" })
 
 local findMapping = {
-  f = { "<cmd>Telescope find_files<CR>", "Find files" },
-  g = { "<cmd>Telescope live_grep<CR>", "Live grep" },
-  s = { "<cmd>Telescope lsp_dynamic_workspace_symbols<CR>", "Find symbol" }
+  ["ff"] = { "<cmd>Telescope find_files theme=ivy<CR>", "Find files" },
+  ["fg"] = { "<cmd>Telescope live_grep theme=ivy<CR>", "Live grep" },
+  ["fs"] = { "<cmd>Telescope lsp_dynamic_workspace_symbols theme=ivy<CR>", "Find symbol" }
 }
-wk.register(findMapping, { mode = "n", noremap = true, nowait = false, silent = true, buffer = nil, prefix = "f" })
+wk.register(findMapping, { mode = "n", noremap = true, nowait = false, silent = true, buffer = nil, prefix = "<space>" })
 
 
 

@@ -25,7 +25,8 @@ return require('packer').startup(function(use)
   -- vim status line and theme,done
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
-
+  -- taglist
+  use 'simrat39/symbols-outline.nvim'
   -- file explorer,done
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'

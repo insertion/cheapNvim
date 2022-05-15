@@ -11,6 +11,7 @@ lua require('plugin-config/bufferline')
 lua require('plugin-config/nvim-telescope')
 lua require('plugin-config/which-key')
 lua require('plugin-config/nvim-cmp')
+lua require('plugin-config/symbols-outline')
 " lsp config
 lua require('lsp/setup')
 
