@@ -209,6 +209,11 @@ _G.packer_plugins = {
     path = "/home/lei/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
   },
+  ["vim-im-select"] = {
+    loaded = true,
+    path = "/home/lei/.local/share/nvim/site/pack/packer/start/vim-im-select",
+    url = "https://github.com/leiyi548/vim-im-select"
+  },
   ["vim-signify"] = {
     loaded = true,
     path = "/home/lei/.local/share/nvim/site/pack/packer/start/vim-signify",

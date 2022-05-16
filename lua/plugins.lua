@@ -64,4 +64,6 @@ return require('packer').startup(function(use)
 
   -- leave insertMode with en, done
   use 'jiazhoulvke/ibus-autoswitch.vim'
+  -- windows im switch
+  use 'leiyi548/vim-im-select'
 end)
