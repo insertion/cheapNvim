@@ -77,7 +77,8 @@ wk.register(lspMapping, { mode = "n", noremap = true, nowait = false, silent = t
 local findMapping = {
   ["ff"] = { "<cmd>Telescope find_files theme=ivy<CR>", "Find files" },
   ["fg"] = { "<cmd>Telescope live_grep theme=ivy<CR>", "Live grep" },
-  ["fs"] = { "<cmd>Telescope lsp_dynamic_workspace_symbols theme=ivy<CR>", "Find symbol" }
+  ["fs"] = { "<cmd>Telescope lsp_dynamic_workspace_symbols theme=ivy<CR>", "Find symbol" },
+  ["r"] = { "<cmd>lua vim.lsp.buf.rename()<CR>", "Rename" }
 }
 wk.register(findMapping, { mode = "n", noremap = true, nowait = false, silent = true, buffer = nil, prefix = "<space>" })
 
