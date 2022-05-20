@@ -20,13 +20,16 @@ return require('packer').startup(function(use)
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/plenary.nvim' } } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use 'nvim-telescope/telescope-symbols.nvim'
-  use { 'nvim-telescope/telescope-ui-select.nvim' }
+  use 'nvim-telescope/telescope-ui-select.nvim'
 
   -- vim status line and theme,done
-  use 'vim-airline/vim-airline'
-  use 'vim-airline/vim-airline-themes'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   -- taglist
   use 'simrat39/symbols-outline.nvim'
+
   -- file explorer,done
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
@@ -35,17 +38,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
   use 'hrsh7th/cmp-buffer' -- { name = 'buffer' },
   use 'hrsh7th/cmp-path' -- { name = 'path' }
-  use 'hrsh7th/cmp-cmdline' -- { name = 'cmdline' }
-  use 'dmitmel/cmp-cmdline-history' --{ name = 'cmdline_history'}
   use 'hrsh7th/nvim-cmp'
-
-  -- vsnip
-  use 'hrsh7th/cmp-vsnip' -- { name = 'vsnip' }
-  use 'hrsh7th/vim-vsnip'
-  use 'rafamadriz/friendly-snippets'
-
-  -- lspkind 在代码提示中, 显示分类的小图标支持
-  use 'onsails/lspkind-nvim'
 
   -- wecome page,done
   use 'mhinz/vim-startify'
