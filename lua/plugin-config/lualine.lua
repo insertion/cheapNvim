@@ -11,10 +11,8 @@ lualine.setup({
     -- https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
     theme = "powerline_dark",
     -- 分割线
-    component_separators = {
-      left = "|",
-      right = "|",
-    },
+    section_separators = { left = '', right = '' },
+    component_separators = { left = "", right = "|" },
     -- 设置全局模式,所有窗口共享同一个statusline
     globalstatus = true,
   },
@@ -22,10 +20,11 @@ lualine.setup({
     lualine_a = { 'mode' },
     lualine_b = { 'branch', 'diff', 'diagnostics' },
     lualine_c = { { 'filename', file_status = true, path = 3 } },
-    lualine_x = { 'encoding' },
+    lualine_x = { 'filetype' },
     lualine_y = { 'progress' },
     lualine_z = { 'location' }
   },
+  -- 未激活窗口的sections配置
   inactive_sections = {},
   tabline = {},
   -- lualine extensions change statusline appearance for a window/buffer with specified filetypes.
