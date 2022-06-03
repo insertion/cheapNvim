@@ -40,6 +40,13 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path' -- { name = 'path' }
   use 'hrsh7th/nvim-cmp'
 
+  -- comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
   -- wecome page,done
   use 'mhinz/vim-startify'
 

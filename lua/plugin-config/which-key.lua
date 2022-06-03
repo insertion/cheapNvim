@@ -70,7 +70,9 @@ wk.register(leaderMapping, { mode = "n", noremap = true, nowait = false, silent 
 local lspMapping = {
   ["<leader>f"] = { "<cmd>lua vim.lsp.buf.format({async = true})<CR>", "Format" },
   ["gd"] = { "<cmd>Telescope lsp_definitions<CR>", "Goto difinition" },
-  ["gr"] = { "<cmd>Telescope lsp_references<CR>", "Find references" }
+  ["gr"] = { "<cmd>Telescope lsp_references<CR>", "Find references" },
+  ["gc"] = "Comment linewise",
+  ["gb"] = "Comment blockwise"
 }
 wk.register(lspMapping, { mode = "n", noremap = true, nowait = false, silent = true, buffer = nil, prefix = "" })
 
