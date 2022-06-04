@@ -37,9 +37,9 @@ return require('packer').startup(function(use)
   -- nvim-cmp 只有 hrsh7th/nvim-cmp 是插件本身,其他cmp-xxx 基本都是插件补全来源
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
   use 'hrsh7th/cmp-buffer' -- { name = 'buffer' },
-  use 'hrsh7th/cmp-path' -- { name = 'path' }
-  use 'hrsh7th/nvim-cmp'
-
+  use 'hrsh7th/cmp-vsnip' -- { name = 'vsnip' }
+  use 'hrsh7th/nvim-cmp'  --engine
+  use 'hrsh7th/vim-vsnip' --engine
   -- comment
   use {
     'numToStr/Comment.nvim',
