@@ -31,7 +31,7 @@ local setting = {
     end,
 
     ["<Up>"] = function(fallback)
-      if cmp.visible() then
+      if cmp.visible() and cmp.get_selected_entry() then
         cmp.select_prev_item()
       else
         fallback()
@@ -48,7 +48,11 @@ local setting = {
 
     ["<CR>"] = function(fallback)
       if cmp.visible() then
-        cmp.confirm({ select = true, behavior = cmp.ConfirmBehavior.Replace })
+        if cmp.get_selected_entry() then
+          cmp.confirm({ select = false, behavior = cmp.ConfirmBehavior.Replace })
+        else
+          cmp.close()
+        end
       else
         fallback()
       end

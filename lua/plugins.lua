@@ -38,8 +38,10 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
   use 'hrsh7th/cmp-buffer' -- { name = 'buffer' },
   use 'hrsh7th/cmp-vsnip' -- { name = 'vsnip' }
-  use 'hrsh7th/nvim-cmp'  --engine
+  use 'hrsh7th/nvim-cmp' --engine
   use 'hrsh7th/vim-vsnip' --engine
+  use 'onsails/lspkind-nvim'
+
   -- comment
   use {
     'numToStr/Comment.nvim',
