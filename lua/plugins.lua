@@ -3,6 +3,9 @@
 return require('packer').startup(function(use)
   -- manage packer itself
   use 'wbthomason/packer.nvim'
+  
+  -- powerful move
+  use 'ggandor/leap'
 
   -- lsp config
   use { 'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer' }
@@ -67,5 +70,5 @@ return require('packer').startup(function(use)
   -- leave insertMode with en, done
   use 'jiazhoulvke/ibus-autoswitch.vim'
   -- windows im switch
-  use 'leiyi548/vim-im-select'
+  -- use 'leiyi548/vim-im-select'
 end)

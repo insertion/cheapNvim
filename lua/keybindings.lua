@@ -12,7 +12,7 @@ local opt = { noremap = true, silent = true }
 -- "i"; insert 模式
 
 -- 退出插入模式后保存文件
-map("i", "<C-s>", '<ESC><cmd>write<CR><cmd>lua vim.lsp.buf.format()<CR>', opt)
+-- --map("i", "<C-s>", '<ESC><cmd>write<CR><cmd>lua vim.lsp.buf.format()<CR>', opt)
 -- 切换文件树
-map("n", "<A-m>", "<cmd>NvimTreeToggle<CR>", opt)
+-- map("n", "<A-m>", "<cmd>NvimTreeToggle<CR>", opt)
 -- 大部分快捷键在which-key中设置
